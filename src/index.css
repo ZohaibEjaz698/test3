@@ -1,0 +1,2548 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital@0;1&display=swap');
+*{
+    font-family: 'DM Sans',sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    --main1: #ffffff;
+    --main2: #000000;
+    --main3: #f2f8fc;
+    --main5: #f8f7f4;
+    --main4: #7a7a7a;
+    --accent1: #c51a31;
+    --accent2: #ff6400;
+    --accent3: #28214c;
+    --accent4: #4dc4f1;
+}
+::-webkit-scrollbar-thumb{
+    width: 15px;
+    background-color: var(--accent3);
+}
+::-webkit-scrollbar{
+    width: 15px;
+}
+::selection{
+    background-color:#9a89df;
+}
+.btn{
+    background-color: transparent;
+    border-radius: 1rem;
+    padding: 14px 40px;
+    font-size: 18px;
+    overflow: hidden;
+    font-weight: 700;
+    border: 2px solid var(--accent2);
+    color: var(--accent2);
+    transition: all 0.2s linear;
+}
+.btn:hover{
+    color: var(--main5);
+    background-color: var(--accent2);
+}
+body{
+    background-color: var(--main3);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+.hero{
+    background-color: var(--main3);
+    height: 60rem;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+.logo img{
+    height: 2rem;
+}
+.nav a{
+    color: var(--main2);
+    font-size: 17px;
+    margin-left: 2rem;
+    font-weight: 550;
+    transition: all 0.2s ease-in-out;
+}
+.nav a:hover{
+    color: var(--accent2);
+}
+.call{
+    font-size: 17px;
+    color: var(--main2);
+    font-weight: 500;
+}
+.call i{
+    font-size: 1.5rem;
+    margin-right: .5rem;
+    transition: all 0.2s ease-in-out;
+    color: var(--accent1);
+}
+.call i:hover{
+    color: var(--accent2);
+}
+.hammenu{
+    display: none;
+    position: relative;
+    width: 35px;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+    border: none;
+    background: none;
+    z-index: 99;
+}
+.hammenu .bar, .hammenu::after,.hammenu::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: var(--accent3);
+    margin: 6px 0px;
+    transition: 0.4s;
+}
+.hammenu.active::before{
+    transform: rotate(45deg) translate(5px,4px);
+}
+.hammenu.active::after{
+    transform: rotate(-45deg) translate(11px,-10px);
+}
+.hammenu.active .bar{
+    opacity: 0;
+}
+.mobile{
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 98;
+    background-color: var(--main5);
+    padding-top: 120px;
+    transition: 0.4s;
+}
+.mobile.active{
+    left: 0;
+}
+.mobile a{
+    width: 100%;
+    max-width: 200px;
+    display: block;
+    margin: 0 auto 16px;
+    text-align: center;
+    padding: 10px 16px;
+    font-size: 20px;
+    color: var(--accent3);
+}
+.mobile a:hover{
+    background-color: #edeaff;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.part1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 500px;
+    margin-top: -14rem;
+    margin-left: 5rem;
+}
+.part1 h3{
+    color: var(--accent2);
+    background-color: #fac4a0;
+    border-radius: 4rem;
+    padding: 3px 18px;
+    font-size: 16px;
+    margin-right: 18rem;
+    margin-bottom: 1rem;
+}
+.part1 h1{
+    font-size: 45px;
+    max-width: 400px;
+    margin-right: 7rem;
+    margin-bottom: 1.5rem;
+}
+.part1 p{
+    color: #7a7a7a;
+    margin-bottom: 2.5rem;
+}
+.part1 Button{
+    margin-right: 20rem;
+}
+.part1 img{
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 2rem;
+    margin-left: -4.7rem;
+}
+.part1 h4{
+    margin-top: -2.3rem;
+}
+.part2 img{
+    height: 500px;
+    margin-top: -17rem;
+    margin-left: 9rem;
+}
+.about{
+    background-color: var(--main5);
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about1 img{
+    height: 500px;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+.about2{
+    max-width: 600px;
+    margin-left: 3rem;
+}
+.about2 .abt{
+    color: var(--accent1);
+    background-color: #fac4a0;
+    border-radius: 4rem;
+    font-size: 16px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 27rem;
+    margin-bottom: 1rem;
+}
+.about2 h1{
+    font-size: 38px;
+    margin-bottom: .7rem;
+}
+.about2 .p{
+    max-width: 450px;
+    margin-bottom: 2rem;
+}
+.point1,.point3{
+    margin-bottom: 2rem;
+    max-width: 400px;
+}
+.point3{
+    display: flex;
+    margin-left: 2rem;
+    margin-bottom: .3rem;
+}
+.point3 span{
+    margin-top: .7rem;
+    margin-right: 3rem;
+    font-size: 20px;
+    font-weight: 600;
+}
+.point3 h3{
+    font-size: 35px;
+    margin-right: 0.4rem;
+    border-bottom: 2px solid var(--accent1);
+}
+.exp{
+    display: flex;
+    margin-left: 1.8rem;
+}
+.exp p{
+    margin-right: 1.8rem;
+    font-size: 18px;
+    font-weight: 600;
+}
+.point2{
+    background-color: #edeaff;
+    padding: 1.5rem 2rem;
+    border-radius: 2rem;
+    max-width: 500px;
+    margin-bottom: 2rem;
+}
+.service .abt{
+    color: var(--accent1);
+    background-color: #fac4a0;
+    border-radius: 4rem;
+    font-size: 18px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    margin-right: 45rem;
+    margin-left: 45rem;
+}
+.emp{
+    padding-bottom: 3rem;
+}
+.service{
+    height: 760px;
+    background-color: #141025;
+}
+.service h1{
+    margin-left: 30rem;
+    font-size: 35px;
+    color: var(--main3);
+}
+.service .pp{
+    max-width: 400px;
+    text-align: center;
+    margin-left: 37rem;
+    font-size: 17px;
+    margin-top: 1rem;
+    color: var(--main4);
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3.5rem;
+}
+.service Button{
+    margin-left: 43rem;
+    margin-top: 4rem;
+}
+.empp{
+    padding-bottom: 7rem;
+}
+.project{
+    height: 830px;
+    background-color: #141025;
+}
+.project .abt{
+    color: var(--accent1);
+    background-color: #fac4a0;
+    border-radius: 4rem;
+    font-size: 18px;
+    padding: 4px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-bottom: -2rem;
+    margin-right: 45rem;
+    margin-left: 45rem;
+}
+.project h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    color: var(--main3);
+    font-size: 40px;
+}
+.project .ppp{
+    text-align: center;
+    max-width: 400px;
+    margin-left: 37rem;
+    margin-top: 1.5rem;
+    color: var(--main4);
+}
+.products{
+    margin-left: 1.7rem;
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.project Button{
+    margin-left: 43rem;
+    margin-top: 3rem;
+}
+.statistics{
+    height: 700px;
+    background-color: var(--main1);
+}
+.statistics .abt{
+    color: var(--accent1);
+    background-color: #fac4a0;
+    border-radius: 4rem;
+    font-size: 18px;
+    padding: 4px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-bottom: -2rem;
+    margin-right: 45rem;
+    margin-left: 45rem;
+}
+.statistics h1{
+    margin-left: 39rem;
+    font-size: 40px;
+    margin-top: 4rem;
+}
+.statistics .pofstats{
+    margin-left: 33rem;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 1.3rem;
+}
+.stats{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.statistics Button{
+    margin-left: 45rem;
+    margin-top: 4rem;
+}
+.testimonials{
+    height: 700px;
+    background-color: #141025;
+}
+.testimonials .abt{
+    color: var(--accent1);
+    background-color: #fac4a0;
+    border-radius: 4rem;
+    font-size: 18px;
+    padding: 4px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-bottom: -2rem;
+    margin-right: 45rem;
+    margin-left: 45rem;
+}
+.testimonials h1{
+    color: var(--main3);
+    font-size: 40px;
+    margin-top: 4rem;
+    margin-left: 34.5rem;
+}
+.testi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.testi1 img{
+    height: 500px;
+}
+.testi2{
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+.testi2 h3{
+    color: var(--main3);
+}
+.testi2 h2{
+    color: var(--accent2);
+    margin-bottom: 2rem;
+}
+.testi2 p{
+    color: var(--main4);
+    max-width: 500px;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+.testi2 img{
+    height: 60px;
+}
+.contact{
+    height: 1000px;
+    background-color: var(--main5);
+}
+.contact .abt{
+    color: var(--accent1);
+    background-color: #fac4a0;
+    border-radius: 4rem;
+    font-size: 18px;
+    padding: 6px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-bottom: -2rem;
+    margin-right: 45rem;
+    margin-left: 45rem;
+}
+.cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact1{
+    margin-left: 12rem;
+    margin-right: 12rem;
+    margin-top: 5rem;
+}
+.contact1 p{
+    max-width: 600px;
+    font-size: 20px;
+}
+.contact1 h1{
+    font-size: 40px;
+    margin-bottom: 1rem;
+    max-width: 500px;
+}
+.contact2 img{
+    height: 640px;
+    margin-bottom: 2rem;
+    margin-right: 4rem;
+}
+.info{
+    display: flex;
+    margin-top: 2rem;
+}
+.email{
+    margin-right: 10rem;
+}
+.email h4{
+    color: var(--accent1);
+    font-size: 22px;
+}
+.email p{
+    font-weight: 500;
+}
+.ph h4{
+    color: var(--accent1);
+    font-size: 22px;
+}
+.ph p{
+    font-weight: 500;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+.form input{
+    width: 31rem;
+    height: 3rem;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: .4rem;
+    font-size: 18px;
+    outline: none;
+}
+.form textarea{
+    width: 31rem;
+    height: 10rem;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    background-color: transparent;
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: .4rem;
+    font-size: 18px;
+    outline: none;
+}
+.blog{
+    height: 800px;
+    background-color: var(--main5);
+}
+.blog .abt{
+    color: var(--accent1);
+    background-color: #fac4a0;
+    border-radius: 4rem;
+    font-size: 18px;
+    padding: 6px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-bottom: -2rem;
+    margin-right: 45rem;
+    margin-left: 45rem;
+}
+.blog h2{
+    font-size: 40px;
+    margin-left: 40rem;
+    margin-top: 4rem;
+}
+.blog .pofblog{
+    font-size: 18px;
+    max-width: 500px;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-left: 34rem;
+    text-align: center;
+}
+.post{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+footer{
+    height: 500px;
+    background-color: var(--main5);
+    padding-top: 5rem;
+}
+.choice{
+    height: 600px;
+    background-color: #141025;
+}
+.choice .abt{
+    color: var(--accent1);
+    background-color: #fac4a0;
+    border-radius: 4rem;
+    font-size: 18px;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -2rem;
+    margin-right: 44rem;
+    margin-left: 44rem;
+}
+.ch1{
+    margin-left: 10rem;
+}
+.ch1 h2{
+    color: white;
+    font-size: 35px;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+    max-width: 600px;
+}
+.ch1 p{
+    color: white;
+    max-width: 600px;
+    font-size: 18px;
+}
+.ch2{
+    margin-left: 60rem;
+    margin-top: -21rem;
+
+}
+.ch2 img{
+    height: 500px;
+}
+.consult{
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(./images/service-5.jpg) no-repeat;
+    background-size: cover;
+    margin-top: 2rem;
+}
+.consult h2{
+    color: white;
+    font-size: 35px;
+    margin-bottom: 1rem;
+}
+.consult p{
+    color: white;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    text-align: center;
+    font-size: 20px;
+}
+.pro{
+    height: 600px;
+    margin-bottom: 35rem;
+}
+.pro .abt{
+    color: var(--accent1);
+    background-color: #fac4a0;
+    border-radius: 4rem;
+    font-size: 18px;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -2rem;
+    margin-right: 44rem;
+    margin-left: 44rem;
+}
+.pro h2{
+    margin-left: 40rem;
+    font-size: 35px;
+    margin-top: 4rem;
+}
+.pro .pofpro{
+    margin-left: 35rem;
+    margin-top: 1rem;
+    max-width: 500px;
+    text-align: center;
+    font-size: 20px;
+}
+.serve{
+    height: 700px;
+    background-color: var(--main5);
+    margin-bottom: 20rem;
+}
+.serve .abt{
+    color: var(--accent1);
+    background-color: #fac4a0;
+    border-radius: 4rem;
+    font-size: 18px;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -2rem;
+    margin-right: 44rem;
+    margin-left: 44rem;
+}
+.serve h1{
+    font-size: 35px;
+    margin-left: 30rem;
+    margin-top: 4rem;
+}
+.serve .pofserve{
+    font-size: 19px;
+    max-width: 500px;
+    text-align: center;
+    margin-left: 33rem;
+    margin-top: 1rem;
+    color: gray;
+}
+.process{
+    height: 600px;
+}
+.process .abt{
+    color: var(--accent1);
+    background-color: #fac4a0;
+    border-radius: 4rem;
+    font-size: 18px;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -2rem;
+    margin-right: 44rem;
+    margin-left: 44rem;
+}
+.process h1{
+    font-size: 35px;
+    margin-left: 33rem;
+    margin-top: 4rem;
+}
+.process .pofprocess{
+    font-size: 19px;
+    color: gray;
+    max-width: 500px;
+    text-align: center;
+    margin-left: 33rem;
+    margin-top: 1rem;
+}
+.s1{
+    background-color: var(--accent2);
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 8px solid #fac4a0;
+}
+.s1 svg{
+    height:50px;
+}
+.s2{
+    background-color: var(--accent2);
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 8px solid #fac4a0;
+}
+.s2 svg{
+    height:50px;
+    fill: var(--main1);
+}
+.s3{
+    background-color: var(--accent2);
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 8px solid #fac4a0;
+}
+.s3 svg{
+    height:50px;
+    fill: var(--main1);
+}
+.solution{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+.sol1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 3rem;
+    flex-direction: column;
+}
+.sol1 p{
+    max-width: 300px;
+    text-align: center;
+}
+.sol2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 3rem;
+}
+.sol2 p{
+    max-width: 300px;
+    text-align: center;
+}
+.sol3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.sol3 p{
+    max-width: 300px;
+    text-align: center;
+}
+.sol1 h2,.sol2 h2,.sol3 h2{
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+.blogg {
+    height: 1400px;
+}
+.blogg .abt{
+    color: var(--accent1);
+    background-color: #fac4a0;
+    border-radius: 4rem;
+    font-size: 18px;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -2rem;
+    margin-right: 44rem;
+    margin-left: 44rem;
+}
+.blogg h1{
+    font-size: 35px;
+    margin-left: 39rem;
+    margin-top: 4rem;
+}
+.blogg .pofblogg{
+    font-size: 19px;
+    color: gray;
+    text-align: center;
+    max-width: 500px;
+    margin-left: 34rem;
+    margin-top: 1rem;
+}
+
+@media (max-width:1280px){
+    html,body
+    {
+        height: 100%;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+    }
+    header{
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+    .logo img{
+        height: 2.5rem;
+    }
+    nav a{
+        font-size: 16px;
+    }
+    .call{
+        font-size: 16px;
+    }
+    .call i{
+        font-size: 1.4rem;
+    }
+    .part1{
+        margin-left: 8rem;
+        margin-top: -20rem;
+    }
+    .part2 img{
+        height: 400px;
+        margin-left: 10rem;
+        margin-right: 5rem;
+        margin-bottom: 7rem;
+    }
+    .part1 h1{
+        font-size: 35px;
+        max-width: 320px;
+        margin-left: -4rem;
+    }
+    .part1 h3{
+        font-size: 15px;
+        margin-left: -1rem;
+    }
+    .part1 p{
+        font-size: 16px;
+    }
+    .part1 button{
+        font-size: 15px;
+        margin-left: -1rem;
+    }
+    .sales{
+        margin-left: 1rem;
+    }
+    .about1 img{
+        height: 400px;
+        margin-left: 3rem;
+    }
+    .about2{
+        margin-left: 1rem;
+        margin-right: 4rem;
+    }
+    .about2 .abt{
+        font-size: 15px;
+        padding: 3px 18px;
+        margin-right: 15rem;
+        margin-bottom: 1rem;
+    }
+    .about2 h1{
+        font-size: 32px;
+    }
+    .about2 p{
+        font-size: 15px;
+    }
+    .service .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 35rem;
+        margin-bottom: 1rem;
+        margin-left: 35rem;
+    }
+    .service h1{
+        margin-left: 21rem;
+    }
+    .service .pp{
+        margin-left: 27rem;
+    }
+    .service button{
+        margin-left: 33rem;
+    }
+    .project .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 35rem;
+        margin-bottom: 1rem;
+        margin-left: 35rem;
+    }
+    .project h2{
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+    .project .ppp{
+        margin-left: 28rem;
+    }
+    .project button{
+        margin-left: 33rem;
+    }
+    .statistics .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 35rem;
+        margin-bottom: 1rem;
+        margin-left: 35rem; 
+    }
+    .statistics h1{
+        margin-top: 2rem;
+        margin-left: 29rem;
+    }
+    .statistics .pofstats{
+        margin-left: 23rem;
+    }
+    .stats{
+        margin-left: 2rem;
+    }
+    .statistics button{
+        margin-left: 33rem;
+    }
+    .testimonials .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 35rem;
+        margin-bottom: 1rem;
+        margin-left: 35rem; 
+    }
+    .testimonials h1{
+        margin-top: 2rem;
+        margin-left: 25rem;
+    }
+    .contact .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 35rem;
+        margin-bottom: 1rem;
+        margin-left: 35rem; 
+    }
+    .contact2 img{
+        height: 600px;
+    }
+    .blog .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 35rem;
+        margin-bottom: 1rem;
+        margin-left: 35rem; 
+    }
+    .blog h2{
+        margin-top: 2rem;
+        margin-left: 30rem;
+    }
+    .blog .pofblog{
+       margin-left: 24rem;
+    }
+    .choice .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 35rem;
+        margin-bottom: 1rem;
+        margin-left: 33rem; 
+    }
+    .ch2 img{
+        height: 400px;
+        margin-left: -7rem;
+    }
+    .process .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 35rem;
+        margin-bottom: 1rem;
+        margin-left: 33rem; 
+    }
+    .process h1{
+        margin-left: 23rem;
+        margin-top: 2rem;
+    }
+    .process .pofprocess{
+        margin-left: 23rem;
+    }
+    .pro .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 35rem;
+        margin-bottom: 1rem;
+        margin-left: 33rem;
+    }
+    .pro h2{
+        margin-left: 28rem;
+        margin-top: 1rem;
+    }
+    .pro .pofpro{
+        margin-left: 24rem;
+    }
+    .serve .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 35rem;
+        margin-bottom: 1rem;
+        margin-left: 33rem;
+    }
+    .serve h1{
+        margin-left: 21rem;
+        margin-top: 1rem;
+    }
+    .serve .pofserve{
+        margin-left: 24rem;
+    }
+    .blogg .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 35rem;
+        margin-bottom: 1rem;
+        margin-left: 33rem;
+    }
+    .blogg h1{
+        margin-left: 28rem;
+        margin-top: 1rem;
+    }
+    .blogg .pofblogg{
+        margin-left: 24rem;
+    }
+}
+@media (max-width: 1024px){
+    html,body
+    {
+        height: 100%;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+    }
+    nav,.call{
+        display: none;
+    }
+    .hammenu{
+        display: block;
+        margin-right: -2rem;
+    }
+    .logo{
+        margin-left: -1.5rem;
+    }
+    .part2 img{
+        height: 350px;
+        margin-right: 4rem;
+        margin-bottom: 9rem;
+    }
+    .part1{
+        margin-left: 10rem;
+    }
+    .part1 h3{
+        margin-top: 5rem;
+        font-size: 15px;
+        padding: 3px 18px;
+        margin-right: 5rem;
+        margin-left: -8rem;
+        margin-bottom: 1rem;
+    }
+    .part1 h1{
+        font-size: 30px;
+    }
+    .part1 p{
+        font-size: 15px;
+        margin-left: -4rem;
+    }
+    .part1 .btn{
+        padding: 12px 30px;
+        font-size: 15px;
+        margin-right: 6rem;
+        margin-left: -11rem;
+    }
+    .sales{
+        margin-left: 7rem;
+        margin-bottom: 7rem;
+    }
+   .about1 img{
+    height: 350px;
+    margin-left: 5rem;
+    margin-right: 1rem;
+    margin-bottom: 5rem;
+   }
+.about2 .abt{
+    margin-top: 5rem;
+    font-size: 16px;
+    padding: 3px 18px;
+    margin-right: 10rem;
+    margin-left: 4rem;
+    margin-bottom: 1rem;
+}
+.about2 h1{
+    margin-left: 4rem;
+    max-width: 500px;
+}
+.about2 .p{
+    font-size: 16px;
+    margin-left: 4rem;
+}
+.about2 .point1{
+    margin-left: 4rem;
+}
+.about2 .point2{
+    margin-left: 4rem;
+}
+.about2 .point3,.exp{
+    margin-left: 5rem;
+}
+.service .abt{
+    font-size: 16px;
+    padding: 3px 18px;
+    margin-right: 28rem;
+    margin-bottom: 1rem;
+    margin-left: 27rem;
+}
+.service h1{
+    margin-left: 15rem;
+    font-size: 30px;
+}
+.service .pp{
+    margin-left: 19rem;
+    font-size: 17px;
+}
+.service button{
+    margin-left: 23rem;
+    font-size: 18px;
+}
+.project .abt{
+    font-size: 16px;
+    padding: 3px 18px;
+    margin-right: 25rem;
+    margin-bottom: 1rem;
+    margin-left: 27rem;
+}
+.project h2{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    font-size: 32px;
+}
+.project .ppp{
+    margin-left: 20rem;
+}
+.project button{
+    margin-left: 25rem;
+}
+.project{
+    height: 1400px;
+}
+.products{
+    flex-direction: column;
+}
+.statistics .abt{
+    font-size: 16px;
+    padding: 3px 18px;
+    margin-right: 25rem;
+    margin-bottom: 1rem;
+    margin-left: 27rem; 
+}
+.statistics h1{
+    margin-top: 2rem;
+    margin-left: 22rem;
+}
+.statistics .pofstats{
+    margin-left: 15rem;
+}
+.statistics button{
+    margin-left: 27rem;
+}
+.testimonials .abt{
+    font-size: 16px;
+    padding: 3px 18px;
+    margin-right: 25rem;
+    margin-bottom: 1rem;
+    margin-left: 27rem; 
+}
+.testimonials h1{
+    margin-top: 2rem;
+    margin-left: 17rem;
+}
+.contact .abt{
+    font-size: 16px;
+    padding: 3px 18px;
+    margin-right: 25rem;
+    margin-bottom: 1rem;
+    margin-left: 27rem; 
+}
+.contact2 img{
+    height: 450px;
+    margin-left: -8rem;
+}
+.contact1 h1{
+    font-size: 30px;
+}
+.contact1 p{
+    font-size: 17px;
+}
+.email h4{
+    font-size: 20px;
+}
+.ph h4{
+    font-size: 20px;
+}
+.blog .abt{
+    font-size: 16px;
+    padding: 3px 18px;
+    margin-right: 25rem;
+    margin-bottom: 1rem;
+    margin-left: 27rem; 
+}
+.blog h2{
+    margin-top: 2rem;
+    margin-left: 23rem;
+}
+.blog .pofblog{
+   margin-left: 17rem;
+}
+.choice .abt{
+    font-size: 16px;
+    padding: 3px 18px;
+    margin-right: 25rem;
+    margin-bottom: 1rem;
+    margin-left: 25rem; 
+}
+.ch1{
+    margin-left: 3rem;
+}
+.ch1 h2{
+    font-size: 30px;
+}
+.ch1 p{
+    font-size: 17px;
+}
+.ch2 img{
+    height: 300px;
+    margin-top: 5rem;
+    margin-left: -15rem;
+}
+.process .abt{
+    font-size: 16px;
+    padding: 3px 18px;
+    margin-right: 27rem;
+    margin-bottom: 1rem;
+    margin-left: 25rem; 
+}
+.process h1{
+    margin-left: 15rem;
+    margin-top: 2rem;
+}
+.process .pofprocess{
+    margin-left: 15rem;
+}
+.pro{
+    height: 1700px;
+}
+.pro .abt{
+    font-size: 16px;
+    padding: 3px 18px;
+    margin-right: 25rem;
+    margin-bottom: 1rem;
+    margin-left: 27rem;
+}
+.pro h2{
+    margin-left: 22rem;
+    margin-top: 1rem;
+}
+.pro .pofpro{
+    margin-left: 18rem;
+}
+.serve .abt{
+    font-size: 16px;
+    padding: 3px 18px;
+    margin-right: 25rem;
+    margin-bottom: 1rem;
+    margin-left: 27rem;
+}
+.serve h1{
+    margin-left: 15rem;
+    margin-top: 1rem;
+}
+.serve .pofserve{
+    margin-left: 17rem;
+}
+.blogg .abt{
+    font-size: 16px;
+    padding: 3px 18px;
+    margin-right: 25rem;
+    margin-bottom: 1rem;
+    margin-left: 27rem;
+}
+.blogg h1{
+    margin-left: 21rem;
+    margin-top: 1rem;
+}
+.blogg .pofblogg{
+    margin-left: 16rem;
+}
+}
+
+@media (max-width:768px){
+     ::-webkit-scrollbar{
+        display: none;
+     }
+     .mobile a{
+        font-size: 27px;
+     }
+     .hero{
+        flex-direction: column;
+     }
+    .part2 img{
+        height: 400px;
+        margin-right: 9rem;
+        margin-top: -9rem;
+    }
+    .part1 h3{
+        margin-top: 42rem;
+        font-size: 21px;
+        padding: 3px 18px;
+        margin-right:5rem;
+        margin-left: -5rem;
+        margin-bottom: 1.5rem;
+    }
+    .part1 h1{
+        font-size: 45px;
+        max-width: 700px;
+        text-align: center;
+    }
+    .part1 p{
+        font-size: 17px;
+        margin-left: -8rem;
+        text-align: center;
+    }
+    .part1 .btn{
+        padding: 15px 33px;
+        font-size: 20px;
+        margin-right: 1rem;
+    }
+    .sales{
+        margin-bottom: 15rem;
+        margin-right: 5rem;
+        margin-left: -2rem;
+    }
+    .part1 img{
+        height: 50px;
+        margin-right: 4rem;
+    }
+    .part1 h4{
+        font-size: 18px;
+        margin-left: 7rem;
+        margin-right: 1rem;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about1{
+        margin-top: 18rem;
+    }
+    .about img{
+        height: 400px;
+        margin-left: 3rem;
+        margin-bottom: -5rem;
+    }
+    .about2 .abt{
+        margin-top: 4rem;
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 11rem;
+        margin-left: 13rem;
+        margin-bottom: 1rem;
+    }
+    .about2 h1{
+        text-align: center;
+        margin-left: 2rem;
+    }
+    .about2 .p{
+        font-size: 16px;
+        text-align: center;
+        margin-left: 6rem;
+    }
+    .about2 .point1{
+        margin-left: 7rem;
+        text-align: center;
+    }
+    .about2 .point2{
+        margin-left: 5rem;
+        text-align: center;
+    }
+    .about2 .point3,.exp{
+        margin-left: 12rem;
+    }
+    .service .abt{
+        font-size: 17px;
+        padding: 3px 18px;
+        margin-right: 19rem;
+        margin-bottom: 1rem;
+        margin-left: 19rem;
+    }
+    .service h1{
+        margin-left: 9rem;
+        font-size: 27px;
+    }
+    .service .pp{
+        margin-left: 12rem;
+        font-size: 17px;
+    }
+    .service button{
+        margin-left: 18rem;
+        font-size: 16px;
+        margin-top: 1rem;
+    }
+    .service{
+        height: 1320px;
+        margin-top: 17rem;
+    }
+    .cards{
+        flex-direction: column;
+        margin-left: 3rem;
+    }
+    .project .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 20rem;
+        margin-bottom: 1rem;
+        margin-left: 18rem;
+    }
+    .project h2{
+        margin-top: 2rem;
+        margin-left: -2rem;
+        font-size: 32px;
+    }
+    .project .ppp{
+        margin-left: 11rem;
+    }
+    .project button{
+        margin-left: 17rem;
+    }
+    .statistics .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 20rem;
+        margin-bottom: 1rem;
+        margin-left: 18rem; 
+    }
+    .statistics h1{
+        margin-top: 2rem;
+        margin-left: 14rem;
+        font-size: 30px;
+    }
+    .statistics{
+        height: 1400px;
+    }
+    .statistics .pofstats{
+        margin-left: 9rem;
+        font-size: 18px;
+    }
+    .stats{
+        flex-direction: column;
+    }
+    .statistics button{
+        margin-left: 18rem;
+        margin-top: 1rem;
+    }
+    .testimonials .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 20rem;
+        margin-bottom: 1rem;
+        margin-left: 18rem; 
+    }
+    .testimonials h1{
+        margin-top: 2rem;
+        font-size: 30px;
+        margin-left: 11rem;
+    }
+    .testimonials{
+        height: 900px;
+    }
+    .testi{
+        flex-direction: column;
+    }
+    .testi1 img{
+        height: 400px;
+    }
+    .contact{
+        height: 1500px;
+    }
+    .contact .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 20rem;
+        margin-bottom: 1rem;
+        margin-left: 18rem; 
+    }
+    .cont{
+        flex-direction: column-reverse;
+    }
+    .contact2 img{
+        margin-left: 5rem;
+    }
+    .blog .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 20rem;
+        margin-bottom: 1rem;
+        margin-left: 18rem; 
+    }
+    .blog h2{
+        margin-top: 2rem;
+        font-size: 30px;
+        margin-left: 16rem;
+    }
+    .blog .pofblog{
+       margin-left: 8rem;
+       font-size: 17px;
+    }
+    .post{
+        flex-direction: column;
+    }
+    .blog{
+        height: 1700px;
+    }
+    .choice{
+        height: 800px;
+        margin-top: 20rem;
+    }
+    .choice .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 18rem;
+        margin-bottom: 1rem;
+        margin-left: 18rem; 
+    }
+    .ch2 img{
+        height: 400px;
+        margin-top: 20rem;
+        margin-left: -47rem;
+    }
+    .process{
+        height: 900px;
+    }
+    .process .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 18rem;
+        margin-bottom: 1rem;
+        margin-left: 18rem; 
+    }
+    .process h1{
+        margin-left: 10rem;
+        font-size: 30px;
+        margin-top: 2rem;
+    }
+    .process .pofprocess{
+        margin-left: 9rem;
+        font-size: 17px;
+    }
+    .solution{
+        flex-direction: column;
+    }
+    .sol1 p,.sol2 p{
+        margin-bottom: 2rem;
+    }
+    .consult h2{
+        font-size: 30px;
+    }
+    .consult p{
+        font-size: 17px;
+    }
+    .pro .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 18rem;
+        margin-bottom: 1rem;
+        margin-left: 18rem;
+    }
+    .pro h2{
+        margin-left: 15rem;
+        font-size: 30px;
+        margin-top: 1rem;
+    }
+    .pro .pofpro{
+        margin-left: 8rem;
+        font-size: 16px;
+    }
+    .serve{
+        height: 1800px;
+    }
+    .serve .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 17rem;
+        margin-bottom: 1rem;
+        margin-left: 18rem;
+    }
+    .serve h1{
+        margin-left: 8rem;
+        font-size: 30px;
+        margin-top: 1rem;
+    }
+    .serve .pofserve{
+        margin-left: 8rem;
+        font-size: 16px;
+    }
+    .blogg{
+        height: 1800px;
+    }
+    .blogg .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 18rem;
+        margin-bottom: 1rem;
+        margin-left: 18rem;
+    }
+    .blogg h1{
+        margin-left: 14rem;
+        font-size: 30px;
+        margin-top: 1rem;
+    }
+    .blogg .pofblogg{
+        margin-left: 8rem;
+        font-size: 17px;
+    }
+}
+@media (max-width:640px){
+    .part2 img{
+        height: 400px;
+        margin-right: 4rem;
+        margin-left: 7rem;
+    }
+    .part1 h3{
+        font-size: 20px;
+        padding: 3px 18px;
+        margin-right:5rem;
+        margin-left: -5rem;
+        margin-bottom: 1.5rem;
+    }
+    .part1 h1{
+        font-size: 45px;
+        max-width: 700px;
+        text-align: center;
+    }
+    .part1 p{
+        font-size: 18px;
+        margin-left: -9rem;
+    }
+    .part1 .btn{
+        padding: 15px 35px;
+        font-size: 20px;
+        margin-right: -2rem;
+        margin-bottom: 1rem;
+    }
+    .sales{
+        margin-left: 5rem;
+        margin-bottom: 14rem;
+    }
+    .part1 img{
+        height: 50px;
+        margin-right: 4rem;
+    }
+    .part1 h4{
+        font-size: 20px;
+        margin-left: 7rem;
+    }
+    .about img{
+        height: 400px;
+        margin-left: 4rem;
+    }
+    .about2 .abt{
+        margin-top: 5rem;
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 11rem;
+        margin-left: 13rem;
+        margin-bottom: 1rem;
+    }
+    .about2 h1{
+        text-align: center;
+        margin-left: 3rem;
+        font-size: 28px;
+    }
+    .about2 .p{
+        font-size: 15px;
+        text-align: center;
+        margin-left: 5rem;
+    }
+    .about2 .point1{
+        margin-left: 6rem;
+        text-align: center;
+    }
+    .about2 .point2{
+        margin-left: 4rem;
+        text-align: center;
+    }
+    .about2 .point3,.exp{
+        margin-left: 10rem;
+    }
+    .service .abt{
+        font-size: 17px;
+        padding: 3px 18px;
+        margin-right: 15rem;
+        margin-bottom: 1rem;
+        margin-left: 15rem;
+    }
+    .service h1{
+        margin-left: 6rem;
+        font-size: 25px;
+    }
+    .service .pp{
+        margin-left: 8rem;
+        font-size: 16px;
+    }
+    .service button{
+        margin-left: 13.5rem;
+        font-size: 16px;
+        margin-top: 1rem;
+    }
+    .project .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 15rem;
+        margin-bottom: 1rem;
+        margin-left: 15rem;
+    }
+    .project h2{
+        margin-top: 2rem;
+        margin-left: 1rem;
+        font-size: 32px;
+    }
+    .project .ppp{
+        margin-left: 8rem;
+    }
+    .project button{
+        margin-left: 13rem;
+    }
+    .statistics .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 15rem;
+        margin-bottom: 1rem;
+        margin-left: 15rem; 
+    }
+    .statistics h1{
+        margin-top: 2rem;
+        margin-left: 11rem;
+    }
+    .statistics .pofstats{
+        margin-left: 6rem;
+    }
+    .statistics button{
+        margin-left: 14rem;
+    }
+    .testimonials .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 15rem;
+        margin-bottom: 1rem;
+        margin-left: 15rem; 
+    }
+    .testimonials h1{
+        margin-top: 2rem;
+        font-size: 30px;
+        margin-left: 8rem;
+    }
+    .contact .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 15rem;
+        margin-bottom: 1rem;
+        margin-left: 15rem; 
+    }
+    .contact2 img{
+        margin-left: 5rem;
+    }
+    .blog .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 15rem;
+        margin-bottom: 1rem;
+        margin-left: 15rem; 
+    }
+    .blog h2{
+        margin-top: 2rem;
+        font-size: 30px;
+        margin-left: 13rem;
+    }
+    .blog .pofblog{
+       margin-left: 5rem;
+       font-size: 17px;
+    }
+    .choice .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 12rem;
+        margin-bottom: 1rem;
+        margin-left: 12rem; 
+    }
+    .ch2 img{
+        height: 400px;
+        margin-top: 20rem;
+        margin-left: -52rem;
+    }
+    .process .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 15rem;
+        margin-bottom: 1rem;
+        margin-left: 15rem; 
+    }
+    .process h1{
+        margin-left: 6rem;
+        font-size: 30px;
+        margin-top: 2rem;
+    }
+    .process .pofprocess{
+        margin-left: 4rem;
+        font-size: 17px;
+    }
+    .consult h2{
+      text-align: center;
+    }
+    .pro .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 14rem;
+        margin-bottom: 1rem;
+        margin-left: 14rem;
+    }
+    .pro h2{
+        margin-left: 11rem;
+        font-size: 30px;
+        margin-top: 1rem;
+    }
+    .pro .pofpro{
+        margin-left: 4rem;
+        font-size: 16px;
+    }
+    .serve .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 14rem;
+        margin-bottom: 1rem;
+        margin-left: 14rem;
+    }
+    .serve h1{
+        margin-left: 6rem;
+        font-size: 25px;
+        margin-top: 1rem;
+    }
+    .serve .pofserve{
+        margin-left: 4rem;
+        font-size: 16px;
+    }
+    .blogg{
+        height: 3500px;
+    }
+    .blogg .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 14rem;
+        margin-bottom: 1rem;
+        margin-left: 14rem;
+    }
+    .blogg h1{
+        margin-left: 10rem;
+        font-size: 30px;
+        margin-top: 1rem;
+    }
+    .blogg .pofblogg{
+        margin-left: 4rem;
+        font-size: 17px;
+    }
+}
+@media(max-width:468px){
+    .part2 img{
+        height: 350px;
+        margin-top: -2rem;
+        margin-right: 4rem;
+        margin-left: 7rem;
+    }
+    .logo img{
+        height: 1.5rem;
+        margin-left: -2rem;
+    }
+    .part1 h3{
+        margin-top: 45rem;
+        font-size: 15px;
+        padding: 6px 20px;
+        margin-right:5rem;
+        margin-left: -5rem;
+        margin-bottom: 1.5rem;
+    }
+    .part1 h1{
+        font-size: 40px;
+        max-width: 700px;
+        text-align: center;
+    }
+    .part1 p{
+        font-size: 15px;
+        max-width: 400px;
+        margin-left: -10rem;
+        text-align: center;
+    }
+    .part1 .btn{
+        padding: 15px 35px;
+        font-size: 17px;
+        margin-right: -2rem;
+        margin-bottom: 1rem;
+    }
+    .sales{
+        margin-left: 1rem;
+        margin-bottom: 7rem;
+    }
+    .part1 img{
+        height: 40px;
+        margin-right: 3.5rem;
+    }
+    .part1 h4{
+        font-size: 16px;
+        margin-left: 4rem;
+    }
+    .about1 img{
+        height: 300px;
+        margin-left: 2rem;
+        margin-top: 35rem;
+    }
+    .about2 .abt{
+        margin-top: 5rem;
+        font-size: 15px;
+        padding: 3px 18px;
+        margin-right:8rem;
+        margin-left: 10rem;
+        margin-bottom: 1rem;
+    }
+    .about2 h1{
+        text-align: center;
+        margin-left: 3rem;
+        font-size: 24px;
+    }
+    .about2 .p{
+        font-size: 15px;
+        text-align: center;
+        margin-left: 4rem;
+    }
+    .about2 .point1{
+        margin-left: 4rem;
+        text-align: center;
+    }
+    .about2 .point2{
+        margin-left: 2rem;
+        text-align: center;
+    }
+    .about2 .point3,.exp{
+        margin-left: 8rem;
+    }
+    .exp{
+        margin-bottom: 30rem;
+    }
+    .service{
+        margin-top: 17rem;
+    }
+    .service .abt{
+        font-size: 17px;
+        padding: 3px 18px;
+        margin-right: 10rem;
+        margin-bottom: 1rem;
+        margin-left: 10rem;
+    }
+    .service h1{
+        margin-left: 1rem; 
+        text-align: center;
+        font-size: 25px;
+    }
+    .service .pp{
+        margin-left: 2rem;
+        font-size: 16px;
+    }
+    .service button{
+        margin-left: 9rem;
+        font-size: 16px;
+        margin-top: 1rem;
+    }
+    .project .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 10rem;
+        margin-bottom: 1rem;
+        margin-left: 10rem;
+    }
+    .project h2{
+        margin-top: 2rem;
+        margin-left: 1rem;
+        font-size: 32px;
+    }
+    .project .ppp{
+        margin-left: 3rem;
+    }
+    .project button{
+        margin-left: 8rem;
+    }
+    .statistics .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 10rem;
+        margin-bottom: 1rem;
+        margin-left: 10rem; 
+    }
+    .statistics h1{
+        margin-top: 2rem;
+        margin-left: 6rem;
+    }
+    .statistics .pofstats{
+        margin-left: 1rem;
+        text-align: center;
+    }
+    .statistics button{
+        margin-left: 9rem;
+    }
+    .testimonials .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 10rem;
+        margin-bottom: 1rem;
+        margin-left: 10rem; 
+    }
+    .testimonials{
+        height: 1000px;
+    }
+    .testimonials h1{
+        margin-top: 2rem;
+        font-size: 25px;
+        margin-left: 4rem;
+    }
+    .contact .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 10rem;
+        margin-bottom: 1rem;
+        margin-left: 10rem; 
+    }
+    .contact1 h1{
+        font-size: 25px;
+        max-width: 400px;
+        margin-left: 1rem;
+        text-align: center;
+    }
+    .contact1 .contp{
+        font-size: 15px;
+        margin-left: 1rem;
+        max-width: 400px;
+        text-align: center;
+    }
+    .email h4{
+        font-size: 18px;
+        margin-left: 3rem;
+    }
+    .email p{
+        margin-left: 3rem;
+    }
+    .ph{
+        margin-left: -2rem;
+    }
+    .ph p{
+        margin-left: -1rem;
+    }
+    .ph h4{
+        font-size: 18px;
+    }
+    .info{
+        margin-left: -2rem;
+    }
+    .form input{
+        width: 400px;
+        margin-left: 1rem;
+    }
+    .form textarea{
+        width: 400px;
+        margin-left: 1rem;
+    }
+    .contact1 Button{
+        margin-left: 1rem;
+    }
+    .blog .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 10rem;
+        margin-bottom: 1rem;
+        margin-left: 10rem; 
+    }
+    .blog h2{
+        margin-top: 2rem;
+        font-size: 30px;
+        margin-left: 8rem;
+    }
+    .blog .pofblog{
+       margin-left: 1rem;
+       font-size: 15px;
+    }
+    .choice .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 9rem;
+        margin-bottom: 1rem;
+        margin-left: 10rem; 
+    }
+    .ch2 img{
+        height: 350px;
+        margin-top: 20rem;
+        margin-left: -55rem;
+    }
+    .process .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 10rem;
+        margin-bottom: 1rem;
+        margin-left: 10rem; 
+    }
+    .process h1{
+        margin-left: 1rem;
+        font-size: 25px;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .process .pofprocess{
+        margin-left: 2rem;
+        font-size: 15px;
+    }
+    .solution{
+        margin-left: 3rem;
+    }
+    .pro .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 10rem;
+        margin-bottom: 1rem;
+        margin-left: 10rem;
+    }
+    .pro h2{
+        margin-left: 7rem;
+        font-size: 25px;
+        margin-top: 1rem;
+    }
+    .pro .pofpro{
+        margin-left: 1rem;
+        font-size: 16px;
+    }
+    .serve .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 10rem;
+        margin-bottom: 1rem;
+        margin-left: 10rem;
+    }
+    .serve h1{
+        margin-left: 2rem;
+        font-size: 25px;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .serve .pofserve{
+        margin-left: 2rem;
+        font-size: 16px;
+    }
+    .blogg .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 10rem;
+        margin-bottom: 1rem;
+        margin-left: 10rem;
+    }
+    .blogg h1{
+        margin-left: 6rem;
+        font-size: 25px;
+        margin-top: 1rem;
+    }
+    .blogg .pofblogg{
+        margin-left: 1rem;
+        font-size: 17px;
+    }
+}
+@media (max-width:360px){
+    .part2 img{
+        height: 270px;
+        margin-top: -2rem;
+        margin-right: 4rem;
+        margin-left: 4rem;
+    }
+    .logo img{
+        height: 1.5rem;
+        margin-left: -2rem;
+    }
+    .part1 h3{
+        margin-top: 35rem;
+        font-size: 15px;
+        padding: 6px 20px;
+        margin-right:5rem;
+        margin-left: -5rem;
+        margin-bottom: 1.5rem;
+    }
+    .part1 h1{
+        font-size: 30px;
+        max-width: 700px;
+        text-align: center;
+    }
+    .part1 p{
+        font-size: 13px;
+        max-width: 400px;
+        margin-left: -10rem;
+        text-align: center;
+    }
+    .part1 .btn{
+        padding: 15px 35px;
+        font-size: 15px;
+        margin-right: -2rem;
+        margin-bottom: 1rem;
+    }
+    .sales{
+        margin-left: 1rem;
+        margin-bottom: 7rem;
+    }
+    .part1 img{
+        height: 40px;
+        margin-right: 3.5rem;
+    }
+    .part1 h4{
+        font-size: 15px;
+        margin-left: 4rem;
+    }
+    .about1 img{
+        height: 250px;
+        margin-left: 2rem;
+        margin-top: 35rem;
+    }
+    .about2 .abt{
+        margin-top: 5rem;
+        font-size: 15px;
+        padding: 3px 18px;
+        margin-right:8rem;
+        margin-left: 10rem;
+        margin-bottom: 1rem;
+    }
+    .about2 h1{
+        text-align: center;
+        margin-left: 6rem;
+        font-size: 20px;
+        max-width: 300px;
+    }
+    .about2 .p{
+        font-size: 15px;
+        text-align: center;
+        margin-left: 4rem;
+    }
+    .about2 .point1{
+        margin-left: 4rem;
+        text-align: center;
+    }
+    .about2 .point2{
+        margin-left: 2rem;
+        text-align: center;
+    }
+    .about2 .point3,.exp{
+        margin-left: 8rem;
+    }
+    .exp{
+        margin-bottom: 30rem;
+    }
+    .service{
+        margin-top: 17rem;
+    }
+    .service .abt{
+        font-size: 15px;
+        padding: 3px 18px;
+        margin-right: 7rem;
+        margin-bottom: 1rem;
+        margin-left: 8rem;
+    }
+    .service h1{
+        margin-left: 1rem; 
+        text-align: center;
+        font-size: 22px;
+    }
+    .service .pp{
+        margin-left: 1rem;
+        font-size: 15px;
+    }
+    .service button{
+        margin-left: 5rem;
+        font-size: 15px;
+        margin-top: 1rem;
+    }
+    .project .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 7rem;
+        margin-bottom: 1rem;
+        margin-left: 6rem;
+    }
+    .project h2{
+        margin-top: 2rem;
+        margin-left: 1rem;
+        font-size: 24px;
+    }
+    .project .ppp{
+        margin-left: 1rem;
+    }
+    .project button{
+        margin-left: 4rem;
+    }
+    .statistics .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 7rem;
+        margin-bottom: 1rem;
+        margin-left: 6rem; 
+    }
+    .statistics h1{
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+    .statistics .pofstats{
+        margin-left: 1rem;
+        text-align: center;
+    }
+    .statistics button{
+        margin-left: 5rem;
+    }
+    .testimonials .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 7rem;
+        margin-bottom: 1rem;
+        margin-left: 8rem; 
+    }
+    .testimonials{
+        height: 1150px;
+    }
+    .testimonials h1{
+        margin-top: 2rem;
+        text-align: center;
+        max-width: 200px;
+        font-size: 25px;
+        margin-left: 5rem;
+    }
+    .contact .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 7rem;
+        margin-bottom: 1rem;
+        margin-left: 6rem; 
+    }
+    .contact1 h1{
+        font-size: 25px;
+        max-width: 400px;
+        margin-left: 1rem;
+        text-align: center;
+    }
+    .contact1 .contp{
+        font-size: 13px;
+        margin-left: 1rem;
+        max-width: 300px;
+        text-align: center;
+    }
+    .email h4{
+        font-size: 18px;
+        margin-left: 5rem;
+    }
+    .email p{
+        margin-left: 3rem;
+    }
+    .ph{
+        margin-left: -5rem;
+    }
+    .ph p{
+        margin-left: -1rem;
+    }
+    .ph h4{
+        font-size: 18px;
+    }
+    .info{
+        margin-left: -2rem;
+    }
+    .form input{
+        width: 330px;
+        margin-left: 2rem;
+    }
+    .form textarea{
+        width: 400px;
+        margin-left: 1rem;
+    }
+    .contact1 Button{
+        margin-left: 3rem;
+    }
+    .blog .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 7rem;
+        margin-bottom: 1rem;
+        margin-left: 6rem; 
+    }
+    .blog h2{
+        margin-top: 2rem;
+        font-size: 24px;
+        margin-left: 5rem;
+    }
+    .post{
+        margin-left: -3rem;
+    }
+    .blog .pofblog{
+       margin-left: 0rem;
+       font-size: 15px;
+    }
+    .choice .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 7rem;
+        margin-bottom: 1rem;
+        margin-left: 5rem; 
+    }
+    .ch2 img{
+        height: 300px;
+        margin-top: 20rem;
+        margin-left: -58rem;
+    }
+    .process{
+        height: 1000px;
+    }
+    .process .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 7rem;
+        margin-bottom: 1rem;
+        margin-left: 7rem; 
+    }
+    .process h1{
+        margin-left: 1rem;
+        font-size: 25px;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .process .pofprocess{
+        margin-left: 2rem;
+        font-size: 15px;
+    }
+    .solution{
+        margin-left: 3rem;
+    }
+    .pro .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 7rem;
+        margin-bottom: 1rem;
+        margin-left: 7rem;
+    }
+    .pro h2{
+        margin-left: 4rem;
+        font-size: 25px;
+        margin-top: 1rem;
+    }
+    .pro .pofpro{
+        margin-left: 1rem;
+        font-size: 16px;
+    }
+    .serve .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 7rem;
+        margin-bottom: 1rem;
+        margin-left: 7rem;
+    }
+    .serve h1{
+        margin-left: 1rem;
+        font-size: 25px;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .serve .pofserve{
+        margin-left: 1rem;
+        font-size: 16px;
+    }
+    .cards{
+        margin-left: 1rem;
+    }
+    .blogg .abt{
+        font-size: 16px;
+        padding: 3px 18px;
+        margin-right: 10rem;
+        margin-bottom: 1rem;
+        margin-left: 10rem;
+    }
+    .blogg h1{
+        margin-left: 6rem;
+        font-size: 25px;
+        margin-top: 1rem;
+    }
+    .blogg .pofblogg{
+        margin-left: 1rem;
+        font-size: 17px;
+    }
+}

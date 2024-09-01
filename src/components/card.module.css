@@ -1,0 +1,58 @@
+.card{
+    background-color: #ffffff;
+    height: 280px;
+    width: 350px;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    margin-right: 2rem;
+}
+.card:hover{
+    background-color: #f2f8fc;
+    
+}
+.logo{
+    height: 60px;
+    margin-left: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+}
+.h1{
+    font-size: 20px;
+    margin-left: 1.5rem;
+    margin-bottom: .5rem;
+}
+.p{
+    max-width: 300px;
+    font-size: 16px;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+.read{
+    margin-left: 1.5rem;
+    color: gray;
+    font-weight: 600;
+}
+.read:hover{
+    color:#ff6400;
+}
+@media (max-width:1024px){
+    .logo{
+        height: 45px;
+    }
+    .card{
+        height: 250px;
+        width: 280px;
+    }
+    .h1{
+        font-size: 18px;
+    }
+    .p{
+        font-size: 14px;
+    }
+}
+@media(max-width:768px){
+    .card{
+        margin-bottom: 3rem;
+    }
+}

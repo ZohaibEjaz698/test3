@@ -1,0 +1,26 @@
+.box{
+    background-color: #141025;
+    height: 400px;
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.box h1{
+    color: white;
+    font-size: 40px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.box a{
+    color: gray;
+}
+.box p{
+    color: gray;
+    font-weight: 500;
+    font-size: 18px;
+}
+span{
+    color: #ff6400;
+}
