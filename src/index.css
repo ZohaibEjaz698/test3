@@ -2252,8 +2252,8 @@ footer{
         text-align: center;
     }
     .part1 p{
-        font-size: 13px;
-        max-width: 400px;
+        font-size: 15px;
+        max-width: 300px;
         margin-left: -10rem;
         text-align: center;
     }
@@ -2295,9 +2295,10 @@ footer{
         max-width: 300px;
     }
     .about2 .p{
-        font-size: 15px;
+        font-size: 14px;
         text-align: center;
-        margin-left: 4rem;
+        max-width: 350px;
+        margin-left: 5rem;
     }
     .about2 .point1{
         margin-left: 4rem;
@@ -2397,6 +2398,11 @@ footer{
         margin-bottom: 1rem;
         margin-left: 6rem; 
     }
+    .contact1 p{
+        font-size: 15px;
+        margin-left: 2.5rem;
+        max-width: 350px;
+    }
     .contact1 h1{
         font-size: 25px;
         max-width: 400px;
@@ -2414,7 +2420,7 @@ footer{
         margin-left: 5rem;
     }
     .email p{
-        margin-left: 3rem;
+        margin-left: 5rem;
     }
     .ph{
         margin-left: -5rem;

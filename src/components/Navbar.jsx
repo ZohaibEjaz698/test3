@@ -1,4 +1,5 @@
 import React,{useState} from "react"
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const[isHover,setIsHover] = useState(false)
@@ -13,27 +14,27 @@ function Navbar() {
 
     return( <>
     <header>
-        <a href="/" className="logo"><img src="./images/FourDevs.png" alt="" /></a>
+        <Link className="logo" to="/"><img src="./images/FourDevs.png" alt="" /></Link>
         <nav className="nav">
-           <a href="/">Home</a>
-           <a href="/About">About</a>
-           <a href="/Projects">Project</a>
-           <a href="/Services">Service</a>
-           <a href="/Blog">Blog</a>
-           <a href="/Contact">Contact</a>
+           <Link to="/">Home</Link>
+           <Link to="/About">About</Link>
+           <Link to="/Projects">Project</Link>
+           <Link to="/Services">Service</Link>
+           <Link to="/Blog">Blog</Link>
+           <Link to="/Contact">Contact</Link>
         </nav>
-        <a href="/Contact" className="call"><i class='bx bxs-phone-call'></i>  (+92) 321 4247 165</a>
+        <Link to="/Contact" className="call"><i class='bx bxs-phone-call'></i>  (+92) 321 4247 165</Link>
         <button className="hammenu" onMouseEnter={onHover}>
          <div className="bar"></div>
         </button>
      </header>
      <nav className="mobile">
-     <a href="/">Home</a>
-           <a href="/About">About</a>
-           <a href="/Projects">Project</a>
-           <a href="/Services">Service</a>
-           <a href="/Blog">Blog</a>
-           <a href="/Contact">Contact</a>
+     <Link to="/">Home</Link>
+           <Link to="/About">About</Link>
+           <Link to="/Projects">Project</Link>
+           <Link to="/Services">Service</Link>
+           <Link to="/Blog">Blog</Link>
+           <Link to="/Contact">Contact</Link>
      </nav>
      </>
      )

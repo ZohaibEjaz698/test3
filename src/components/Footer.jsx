@@ -1,5 +1,6 @@
 import Button from './Button.jsx'
 import styles from './footer.module.css'
+import { Link } from 'react-router-dom'
 
 function Footer(){
      return(
@@ -15,19 +16,19 @@ function Footer(){
         <div className={styles.lower}>
         <div className={styles.p1}>
             <h3>Services</h3>
-            <a href="/Services"><i class='bx bx-chevron-right'></i>Web Development</a>
-            <a href="/Services"><i class='bx bx-chevron-right'></i>App Development</a>
-            <a href="/Services"><i class='bx bx-chevron-right'></i>Landing Pages</a>
-            <a href="/Services"><i class='bx bx-chevron-right'></i>Email Marketing</a>
-            <a href="/Services"><i class='bx bx-chevron-right'></i>Seo</a>
+            <Link to="/Services"><i class='bx bx-chevron-right'></i>Web Development</Link>
+            <Link to="/Services"><i class='bx bx-chevron-right'></i>App Development</Link>
+            <Link to="/Services"><i class='bx bx-chevron-right'></i>Landing Pages</Link>
+            <Link to="/Services"><i class='bx bx-chevron-right'></i>Email Marketing</Link>
+            <Link to="/Services"><i class='bx bx-chevron-right'></i>Seo</Link>
             </div>
             <div className={styles.p1}>
             <h3>Other Pages</h3>
-            <a href="/"><i class='bx bx-chevron-right'></i>Home</a>
-            <a href="/About"><i class='bx bx-chevron-right'></i>About</a>
-            <a href="/Services"><i class='bx bx-chevron-right'></i>Services</a>
-            <a href="/Projects"><i class='bx bx-chevron-right'></i>Projects</a>
-            <a href="/Contact"><i class='bx bx-chevron-right'></i>Contact</a>
+            <Link to="/"><i class='bx bx-chevron-right'></i>Home</Link>
+            <Link to="/About"><i class='bx bx-chevron-right'></i>About</Link>
+            <Link to="/Services"><i class='bx bx-chevron-right'></i>Services</Link>
+            <Link to="/Projects"><i class='bx bx-chevron-right'></i>Projects</Link>
+            <Link to="/Contact"><i class='bx bx-chevron-right'></i>Contact</Link>
             </div>
             <div className={styles.p2}>
             <h3>Quick Links</h3>
@@ -45,10 +46,10 @@ function Footer(){
             </label>
             <p>Get the latest News and info.</p>
           <div className={styles.social}>
-            <a href="#" data="Instagram" className='l1'><i class='bx bxl-instagram'></i></a>
-            <a href="#" data="Linkedin" className='l2'><i class='bx bxl-linkedin'></i></a>
-            <a href="#" data="Facebook" className='l3'><i class='bx bxl-facebook' ></i></a>
-            <a href="#" data="Twitter"className='l4' ><i class='bx bxl-twitter' ></i></a>
+            <Link to="https://www.instagram.com/fourdevsofficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" data="Instagram" className='l1'><i class='bx bxl-instagram'></i></Link>
+            <Link to="https://pk.linkedin.com/company/fourdevstechnologies" data="Linkedin" className='l2'><i class='bx bxl-linkedin'></i></Link>
+            <Link to="https://www.facebook.com/FourDevsOfficial/?locale=hi_IN" data="Facebook" className='l3'><i class='bx bxl-facebook' ></i></Link>
+            <Link to="#" data="Twitter"className='l4' ><i class='bx bxl-twitter' ></i></Link>
           </div>
             </div>
         </div>
